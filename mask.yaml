@@ -1,0 +1,12 @@
+# YOLOv8 data configuration
+# (assumes you converted the VOC dataset into /kaggle/working/face_mask_yolo)
+
+path: /kaggle/working/face_mask_yolo   # dataset root
+train: images/train                    # sub-folder created by `yolo data split`
+val:   images/val
+test:  images/test                     # optional but nice to have
+
+names:
+  0: with_mask
+  1: without_mask
+  2: mask_weared_incorrect
